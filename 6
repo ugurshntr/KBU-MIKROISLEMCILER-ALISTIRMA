@@ -1,0 +1,27 @@
+org 00h;
+sjmp basla;
+	basla:	
+		mov r0,#12h;
+		mov r1,#34h;		
+		mov a,r0;
+		mov b,#16d;
+		div ab;
+		mov 09h,a;
+		mov 08h,b;
+		
+		mov a,r1;
+		mov b,#16d;
+		div ab;
+		mov 11h,a;
+		mov 10h,b;
+		
+		mov a,08h;
+		add a,11h;
+		mov p1,a;
+		
+		mov a,09h;
+		add a,10h;
+		mov p0,a;
+end;
+			
+			
